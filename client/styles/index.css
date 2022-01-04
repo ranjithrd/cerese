@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;700&display=swap");
+
+html,
+body,
+*,
+input {
+	font-family: "Spline Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+		sans-serif;
+}
+
+:root {
+	--shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+	--primary: rgb(117, 11, 11);
+	--bg: rgb(248, 248, 248);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#root, body {
+	height: 100vh;
+	width: 100vw;
+	background-color: var(--bg);
+}
+
+main {
+	padding: 4em;
+	height: 100%;
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+
+	box-sizing: border-box;
+}
+
+form {
+	padding: 1.5em;
+	background-color: white;
+	box-shadow: var(--shadow);
+	border-radius: 0.5em;
+
+	display: flex;
+	flex-direction: column;
+	gap: 0.4em;
+}
+
+button {
+	border: none;
+	box-shadow: none;
+	background: none;
+	cursor: pointer;
+}
+
+button {
+	font-size: 0.9em;
+	color: var(--primary);
+}
+
+button.filled,
+button[type="submit"] {
+	width: 100%;
+	background-color: var(--primary);
+	padding: 0.8em;
+	color: white;
+	border-radius: 0.5em;
+	font-size: 0.8em;
+}
+
+.input {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	gap: 6px;
+	align-items: center;
+}
+
+input {
+	padding: 14px 10px;
+	border-radius: 0.5em;
+	border: none;
+	background-color: var(--bg);
+}
+
+.spacer {
+	height: 1em;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.space-between {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+    width: 100%;
+}
+
+.responsive {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 0.8em;
+}
+
+.card {
+	background: white;
+	padding: 1em;
+	border-radius: 0.5em;
+	box-shadow: var(--shadow);
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 6px;
+}
+
+a {
+	color: inherit;
+}
+
+.gray {
+	color: gray;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.small {
+	font-size: 80%;
+}
+
+.primary {
+	color: var(--primary);
+}

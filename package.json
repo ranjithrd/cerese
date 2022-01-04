@@ -1,0 +1,33 @@
+{
+	"name": "urlext",
+	"version": "1.0.0",
+	"main": "./production.js",
+	"private": "true",
+	"scripts": {
+		"server-debg": "vite",
+		"client-debg": "nodemon ./debug.js",
+		"server-prod": "node ./production.js",
+		"client-prod": "vite build",
+		"start": "run-p client-debg server-debg",
+		"serve": "run-s client-prod server-prod"
+	},
+	"dependencies": {
+		"axios": "^0.24.0",
+		"body-parser": "^1.19.1",
+		"cors": "^2.8.5",
+		"dotenv": "^10.0.0",
+		"express": "^4.17.2",
+		"handlebars": "^4.7.7",
+		"ioredis": "^4.28.2",
+		"npm-run-all": "^4.1.5",
+		"react": "^17.0.0",
+		"react-contenteditable": "^3.3.6",
+		"react-dom": "^17.0.0",
+		"react-router-dom": "^5.2.0"
+	},
+	"devDependencies": {
+		"@vitejs/plugin-react-refresh": "^1.3.6",
+		"nodemon": "^2.0.15",
+		"vite": "^2.7.10"
+	}
+}
